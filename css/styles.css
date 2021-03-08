@@ -89,6 +89,18 @@ img {
     padding-bottom: 24px;
 }  
 
+.logo-footer {
+    display: block;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: black;
+    margin-bottom: 20px;
+    }  
+
 .web {
     font-family: var(--secondary-font);
     font-style: normal;
@@ -162,8 +174,6 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 50px;
-    margin-left: 90px;
 }
 
 .tel-link {
@@ -202,7 +212,7 @@ img {
 .top-hero {
     background-color:#2F303A;
     text-align: center;
-    padding: 200px 252px;
+    padding: 200px 15px;
  }
 
 .main-title {
@@ -215,7 +225,8 @@ img {
     color: var(--write-text-color);
     margin-bottom: 30px;
     width: 696px;
-    margin: 0 30px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .top-btn {
@@ -247,24 +258,26 @@ img {
         /*===specialty===*/
 
 .hero {
-    margin-top: 47px;
-    margin-bottom: 47px;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 
 .hero-one {
     display: flex;
-    flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 
 }
 
 .hero-link {
-    flex-basis: calc(100% / 3 - 30px);
-    width: 270px;
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc(100%/4 - 30px);
+    max-width: 270px;
+    
+}
+
+.hero-link:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -293,17 +306,20 @@ img {
         /*===What are we doing===*/
 
 .main-two {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-top: 94px;
+    margin-bottom: 50px;
+
 }
 
 .main-two-list {
     box-sizing: border-box;
+    padding-top: 50px;
     padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
@@ -313,20 +329,28 @@ img {
 
 .about-list {
     display: flex;
-    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: 30px;
+    
 }
 
-.about-list-two{
-    width: 370px;
+.about-list-two {
+    flex-basis: calc(100%/3 - 30px);
+  
+}
+
+.about-list-two:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 .about-list-three {
-     width: 270px;
+    width: 270px;
     margin-right: 30px;
-    margin-bottom: 30px;
+    
+}
 
+.about-list-three:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -339,8 +363,15 @@ img {
     background: #F5F4FA;
 }
 
+.staff {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border: 1px;
+}
+
+
 .staff-name {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -350,9 +381,8 @@ img {
 }
 
 .position-staff {
-    font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.18px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
@@ -407,11 +437,15 @@ img {
             /*====main====*/
 
 .nav-btn {
-    margin-right: 8px;
     background: #F5F4FA;
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
+    list-style: none;
+}
+
+.nav-btn:not(:last-child) {
+    margin-right: 8px;
 }
 
 .modal-btn {
@@ -442,18 +476,19 @@ img {
 }
 
 .portfolio-one {
-   flex-basis: calc(100% / 4 - 30px);
-    display: flex;
+   display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-item {
-    flex-basis: calc(100%/4 - 30px);
+  .portfolio-item {
+    flex-basis: calc((100%-30px)/3);
     max-width: 370px;
     max-height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px blueviolet;
+    border: 1px;
+    padding-top: -0px;
+    padding-left: -0px;
 } 
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
@@ -463,6 +498,13 @@ img {
     margin-bottom: 0;
 }
 
+.web-site {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+}
+
 .web-site-title {
     font-style: normal;
     font-weight: bold;
@@ -470,6 +512,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-bottom: 4px;
 }
 
 .scope-title {
