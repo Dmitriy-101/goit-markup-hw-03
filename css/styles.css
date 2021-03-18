@@ -751,6 +751,17 @@ img {
     display: block;
 }
 
+
+.overlay {
+    position: relative;
+    top: 0px;
+    left: 0px;
+29:58
+    
+}
+
+
+
 .project-item-image:hover, 
 .project-item-image:focus {
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
