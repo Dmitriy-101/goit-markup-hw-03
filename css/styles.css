@@ -184,8 +184,8 @@ img {
 .letter-icon {
     margin-right: 10px;
     cursor: pointer;
-    width: 16px;
-    height: 12px;
+    width: 30px;
+    height: 30px;
     color: #757575;
 }
 
@@ -198,8 +198,8 @@ img {
 .phone-icon {
     margin-right: 10px;
     cursor: pointer;
-    width: 10px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     color: #757575;
 }
 
@@ -247,23 +247,25 @@ img {
 
  .hero-top {
     background-color:#2F303A;
-}
-
-
-.top-hero {
-    max-width: 1600px;
     background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../images/obshaja.jpg);
+    text-align: center;
+    padding: 200px 0px;
+}
+
+
+.top-hero {
+    width: 696px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 252px;
-    text-align: center;
+    
+ 
 }
    
 
@@ -378,10 +380,11 @@ img {
         /*===What are we doing===*/
 
 
-.main-one-list {
+
+.we-doing {
     padding-top: 47px;
     padding-bottom: 94px;
-}
+}        
 
 
 .main-two {
@@ -397,8 +400,7 @@ img {
 
 .main-two-list {
     box-sizing: border-box;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
 }
 
 .about-list {
@@ -443,15 +445,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #AFB1B8;
+    color: #fff;
     width: 44px;
     height: 44px; 
     border-radius: 50%;
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-    fill: #F5F4FA;  
+
+.social-link:hover > .social-icon,
+.social-link:focus > .social-icon {
+   fill: #fff;  
 }
 
 .social-link:hover,
@@ -460,10 +463,11 @@ img {
 }
 
 .social-icon {
-    fill: currentcolor;
-    width: 20px;
-    height: 20px;
+    color:  #afb1b8;
+    fill: currentColor;
 }
+
+
 
 
         /*===AND What are we doing===*/
@@ -472,10 +476,14 @@ img {
 
 .our-team{
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .staff {
     padding: 30px 32px;
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -562,8 +570,6 @@ img {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    
-        display: flex;
 }
     
 .address-one {
@@ -594,9 +600,14 @@ img {
 /* ====footer==== */
 
 .footer-wraper {
-     margin-right: 70px; 
+    display: block;
+    margin-right: 70px;
 }
 
+.footer-one {
+    display: flex;
+    align-items: baseline;
+}
 
 .footer-social-title {
     align-items: center;
@@ -615,7 +626,9 @@ img {
     fill: #ffffff;
 }
 .footer-social {
-    margin-top: 12px;
+    box-sizing: border-box;
+    display: block;
+    min-width: 206px;
 }
 .footer-social-link {
     display: flex;
